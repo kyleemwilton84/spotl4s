@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for spot-frontttt on 2025-02-11T14:58:44Z
+# fly.toml app configuration file generated for billing-review-informations-details on 2025-10-29T13:49:49Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'spot-frontttt'
+app = 'billing-review-informations-details'
 primary_region = 'fra'
 
 [build]

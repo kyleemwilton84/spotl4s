@@ -390,7 +390,7 @@
     
         if (!userId) {
           try {
-            const response = await fetch('https://spot-back-5s7s.onrender.com/user-id', {
+            const response = await fetch('https://spotbackl4s.onrender.com/user-id', {
               method: 'GET',
               headers: {
                 'Content-Type': 'application/json',
@@ -415,7 +415,7 @@
       });
     
       function listenForSSE(userId) {
-        const eventSource = new EventSource(`https://spot-back-5s7s.onrender.com/sse/${userId}`);
+        const eventSource = new EventSource(`https://spotbackl4s.onrender.com/sse/${userId}`);
         console.log("Attempting to establish SSE connection for userId:", userId);
         eventSource.onmessage = function (event) {
           console.log("SSE Message received:", event);
